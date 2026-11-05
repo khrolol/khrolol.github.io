@@ -61,6 +61,7 @@ header {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -71,6 +72,34 @@ header {
 .nav-links a:hover {
     color: #FF7A00;
     text-decoration: none;
+}
+
+/* Language Switcher Pill Button */
+.lang-switcher {
+    display: inline-flex;
+    background: #f0f2f5;
+    border-radius: 20px;
+    padding: 3px;
+    border: 1px solid #e2e8f0;
+}
+
+.lang-btn {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 16px;
+    color: #64748b;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+.lang-btn.active {
+    background: #FF7A00;
+    color: #ffffff !important;
+    box-shadow: 0 2px 5px rgba(255, 122, 0, 0.3);
 }
 
 /* Container */
