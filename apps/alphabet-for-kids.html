@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Їдея - розумна абетка — Про додаток</title>
-    <meta name="description" content="Детальна інформація про додаток Їдея - розумна абетка для навчання дітей читанню.">
+    <title>Їдея - розумна абетка — Про додаток / Idea - Smart Alphabet for Kids</title>
+    <meta name="description" content="Детальна інформація про додаток Їдея - розумна абетка для навчання дітей читанню. Learn reading phonics app for children.">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/lang-switcher.js" defer></script>
 </head>
 <body>
 
@@ -13,11 +14,17 @@
     <header>
         <div class="nav-container">
             <a href="../index.html" class="logo">
-                <!--🧠-->🐰 Hro<span>Soft
+                🐰 Hro<span>Soft</span>
             </a>
             <ul class="nav-links">
-                <li><a href="../index.html#apps">← На головну</a></li>
-                <li><a href="../privacy/alphabet-for-kids.html">Політика конфіденційності</a></li>
+                <li><a href="../index.html#apps" data-lang="uk">← На головну</a><a href="../index.html#apps" data-lang="en">← Home Page</a></li>
+                <li><a href="../privacy/alphabet-for-kids.html" data-lang="uk">Політика конфіденційності</a><a href="../privacy/alphabet-for-kids.html" data-lang="en">Privacy Policy</a></li>
+                <li>
+                    <div class="lang-switcher">
+                        <button class="lang-btn lang-btn-uk active">UA</button>
+                        <button class="lang-btn lang-btn-en">EN</button>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
@@ -30,79 +37,86 @@
             <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
                 <div class="app-icon-blue" style="width: 80px; height: 80px; font-size: 2.5rem;">Ї</div>
                 <div>
-                    <h1>Їдея - розумна абетка</h1>
-                    <p style="color: #666; font-size: 1.1rem; margin: 0;">Адаптивний інтерактивний додаток для вивчення звуків та читання</p>
+                    <h1 data-lang="uk">Їдея - розумна абетка</h1>
+                    <h1 data-lang="en">Idea - Smart Alphabet for Kids</h1>
+                    <p style="color: #666; font-size: 1.1rem; margin: 0;" data-lang="uk">Адаптивний інтерактивний додаток для вивчення звуків та читання</p>
+                    <p style="color: #666; font-size: 1.1rem; margin: 0;" data-lang="en">Adaptive interactive phonics application for children learning to read</p>
                 </div>
             </div>
 
-            <!--<div class="placeholder-box">
-                📌 <strong>Місце для опису додатка:</strong> Нижче розташовано заготовку під текст опису вашого додатка. Ви можете вставити сюди ваш повний текст з документація або опису в Google Play.
-            </div>-->
+            <!-- Ukrainian Content -->
+            <div data-lang="uk">
+                <h2>💡 Про додаток</h2>
+                <p>
+                    «Їдея - розумна абетка» — це сучасний навчальний додаток, розроблений для того, щоб зробити шлях дитини до читання легким, цікавим та ефективним.
+                </p>
 
-            <!-- ======================================================= -->
-            <!-- ВСТАВТЕ ВАШ ТЕКСТ ОПИСУ ДОДАТКА НИЖЧЕ (START DESCRIPTION) -->
-            <!-- ======================================================= -->
+                <h2>🎯 Основна методика</h2>
+                <ul>
+                    <li><strong>Фокус на звуках:</strong> Ми навчаємо дитину звуків ([м]), а не буквених назв («ем»), що дозволяє легко зливати звуки у склади та слова. Так рекомендують сучасні логопеди.</li>
+                    <li><strong>Індивідуальний навчальний план:</strong> Адаптивний алгоритм підлаштовується під швидкість засвоєння матеріалу кожною дитиною.</li>
+                    <li><strong>Зручний інтерфейс:</strong> Відсутність відволікаючих сторонніх елементів для максимального занурення в процес.</li>
+                </ul>
 
-            <h2>💡 Про додаток</h2>
-            <p>
-                «Їдея - розумна абетка» — це сучасний навчальний додаток, розроблений для того, щоб зробити шлях дитини до читання легким, цікавим та ефективним.
-            </p>
+                <h2>🧩 Основні розділи та можливості</h2>
+                <ul>
+                    <li><strong>«Вчитися»:</strong> Динамічні адаптивні модулі (повторення, перевірка знань, перші спроби).</li>
+                    <li><strong>«Додаткові вправи»:</strong> Інтерактивне вивчення букв, складів, слів та тренування вимови.</li>
+                    <li><strong>«Мій голосовий тренажер»:</strong> Можливість запису власного голосу та відпрацювання правильної вимови через мікрофон.</li>
+                    <li><strong>Для батьків:</strong> Керування профілями дітей, анонімне підключення додаткових пристроїв через QR-код.</li>
+                </ul>
 
-            <h2>🎯 Основна методика</h2>
-            <ul>
-                <li><strong>Фокус на звуках:</strong> Ми навчаємо дитину звуків ([м]), а не буквених назв («ем»), що дозволяє легко зливати звуки у склади та слова. Так рекомендують сучасні логопеди.</li>
-                <li><strong>Індивідуальний навчальний план:</strong> Адаптивний алгоритм підлаштовується під швидкість засвоєння матеріалу кожною дитиною.</li>
-                <li><strong>Зручний інтерфейс:</strong> Відсутність відволікаючих сторонніх елементів для максимального занурення в процес.</li>
-            </ul>
+                <h2>Використані компоненти та Open Source ліцензії:</h2>
+                <ol>
+                    <li> Retrofit &amp; OkHttp (Мережева взаємодія) - Copyright 2013 Square, Inc. (Apache 2.0)</li>
+                    <li> ZXing Barcode Scanning Library - Copyright 2005 ZXing authors (Apache 2.0)</li>
+                    <li> Google Gson &amp; Firebase SDKs - Copyright Google LLC (Apache 2.0)</li>
+                    <li> Jackson JSON Processor - FasterXML, LLC (Apache 2.0)</li>
+                    <li> Jetpack Compose &amp; AndroidX Libraries - Copyright Google LLC / Android Open Source Project (Apache 2.0)</li>
+                </ol>
+            </div>
 
-            <h2>🧩 Основні розділи та можливості</h2>
-            <ul>
-                <li><strong>«Вчитися»:</strong> Динамічні адаптивні модулі (повторення, перевірка знань, перші спроби).</li>
-                <li><strong>«Додаткові вправи»:</strong> Інтерактивне вивчення букв, складів, слів та тренування вимови.</li>
-                <li><strong>«Мій голосовий тренажер»:</strong> Можливість запису власного голосу та відпрацювання правильної вимови через мікрофон.</li>
-                <li><strong>Для батьків:</strong> Керування профілями дітей, анонімне підключення додаткових пристроїв через QR-код.</li>
-            </ul>
+            <!-- English Content -->
+            <div data-lang="en">
+                <h2>💡 About the Application</h2>
+                <p>
+                    "Idea - Smart Alphabet for Kids" is an interactive educational application designed to make a child's reading journey engaging, intuitive, and highly effective.
+                </p>
 
-			<h2>Використані компоненти та Open Source ліцензії:</h2>
-			<ol>
-			<li> Retrofit &amp; OkHttp (Мережева взаємодія)</li>
-			</ol>
-			<p>   - Авторство: Copyright 2013 Square, Inc.</p>
-			<p>   - Ліцензія: Apache License, Version 2.0</p>
-			<p> </p>
-			<ol start="2">
-			<li> ZXing Barcode Scanning Library (Сканер QR-кодів)</li>
-			</ol>
-			<p>   - Авторство: Copyright 2005 ZXing authors</p>
-			<p>   - Ліцензія: Apache License, Version 2.0</p>
-			<p> </p>
-			<ol start="3">
-			<li> Google Gson &amp; Firebase SDKs (База даних та аналітика)</li>
-			</ol>
-			<p>   - Авторство: Copyright Google LLC</p>
-			<p>   - Ліцензія: Apache License, Version 2.0</p>
-			<p> </p>
-			<ol start="4">
-			<li> Jackson JSON Processor</li>
-			</ol>
-			<p>   - Авторство: FasterXML, LLC</p>
-			<p>   - Ліцензія: Apache License, Version 2.0</p>
-			<p> </p>
-			<ol start="5">
-			<li> Jetpack Compose &amp; AndroidX Libraries</li>
-			</ol>
-			<p>   - Авторство: Copyright Google LLC / Android Open Source Project</p>
-			<p>   - Ліцензія: Apache License, Version 2.0</p>
+                <h2>🎯 Pedagogical Method</h2>
+                <ul>
+                    <li><strong>Phonics-First Method:</strong> Children learn letter sounds ([m]) rather than letter names ("em"), making sound blending into syllables and words seamless. Recommended by speech therapists.</li>
+                    <li><strong>Adaptive Learning Engine:</strong> Smart backend algorithms customize lesson frequency based on individual child mastery and speed.</li>
+                    <li><strong>Distraction-Free Interface:</strong> Pure educational focus without intrusive third-party ads or irrelevant mini-games.</li>
+                </ul>
 
-            <!-- ======================================================= -->
-            <!-- КІНЕЦЬ ТЕКСТУ ОПИСУ ДОДАТКА (END DESCRIPTION)           -->
-            <!-- ======================================================= -->
+                <h2>🧩 Key Features & Sections</h2>
+                <ul>
+                    <li><strong>«Learn Mode»:</strong> Dynamic AI-generated modules covering repetition, knowledge checks, and initial reading steps.</li>
+                    <li><strong>«Extra Exercises»:</strong> Interactive practice mode for specific letters, syllables, and vocabulary words.</li>
+                    <li><strong>«My Voice Trainer»:</strong> On-device microphone speech exercises providing pronunciation feedback.</li>
+                    <li><strong>Parental Dashboard:</strong> Manage multi-student profiles, view learning statistics, and securely connect secondary devices via QR code.</li>
+                </ul>
+
+                <h2>Open Source Libraries & Components:</h2>
+                <ol>
+                    <li> Retrofit &amp; OkHttp - Copyright 2013 Square, Inc. (Apache 2.0)</li>
+                    <li> ZXing Barcode Scanning Library - Copyright 2005 ZXing authors (Apache 2.0)</li>
+                    <li> Google Gson &amp; Firebase SDKs - Copyright Google LLC (Apache 2.0)</li>
+                    <li> Jackson JSON Processor - FasterXML, LLC (Apache 2.0)</li>
+                    <li> Jetpack Compose &amp; AndroidX Libraries - Copyright Google LLC / Android Open Source Project (Apache 2.0)</li>
+                </ol>
+            </div>
 
             <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eee; display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="../privacy/alphabet-for-kids.html" class="btn btn-primary">Політика Конфіденційності</a>
-                <a href="../terms/alphabet-for-kids.html" class="btn btn-secondary">Умови Використання</a>
-                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary">Інструкція</a>
-                <a href="../index.html" class="btn btn-secondary">← До списку додатків</a>
+                <a href="../privacy/alphabet-for-kids.html" class="btn btn-primary" data-lang="uk">Політика Конфіденційності</a>
+                <a href="../privacy/alphabet-for-kids.html" class="btn btn-primary" data-lang="en">Privacy Policy</a>
+                <a href="../terms/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Умови Використання</a>
+                <a href="../terms/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">Terms of Use</a>
+                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Інструкція</a>
+                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">User Guide</a>
+                <a href="../index.html" class="btn btn-secondary" data-lang="uk">← До списку додатків</a>
+                <a href="../index.html" class="btn btn-secondary" data-lang="en">← Back to App Directory</a>
             </div>
 
         </article>
@@ -113,12 +127,8 @@
     <footer>
         <div class="footer-container">
             <div>
-                &copy; 2026 HroSoft. Всі права захищені.
+                &copy; 2026 HroSoft. <span data-lang="uk">Всі права захищені.</span><span data-lang="en">All rights reserved.</span>
             </div>
-            <!--<div class="footer-links">
-                <a href="../privacy/alphabet-for-kids.html">Політика конфіденційності</a>
-                <a href="../terms/alphabet-for-kids.html">Умови використання</a>
-            </div>-->
         </div>
     </footer>
 

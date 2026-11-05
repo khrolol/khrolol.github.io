@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Умови використання (Terms of Use) — Їдея - розумна абетка</title>
-    <meta name="description" content="Умови використання (Terms of Use / EULA) мобільного додатка Їдея - розумна абетка.">
+    <meta name="description" content="Умови використання (Terms of Use / EULA) мобільного додатка Їдея - розумна абетка. Terms of Service for Idea - Smart Alphabet for Kids.">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/lang-switcher.js" defer></script>
 </head>
 <body>
 
@@ -16,9 +17,15 @@
                 🐰 Hro<span>Soft</span>
             </a>
             <ul class="nav-links">
-                <li><a href="../index.html#apps">← На головну</a></li>
-                <li><a href="../apps/alphabet-for-kids.html">Про додаток</a></li>
-                <li><a href="../privacy/alphabet-for-kids.html">Політика конфіденційності</a></li>
+                <li><a href="../index.html#apps" data-lang="uk">← На головну</a><a href="../index.html#apps" data-lang="en">← Home Page</a></li>
+                <li><a href="../apps/alphabet-for-kids.html" data-lang="uk">Про додаток</a><a href="../apps/alphabet-for-kids.html" data-lang="en">About App</a></li>
+                <li><a href="../privacy/alphabet-for-kids.html" data-lang="uk">Політика конфіденційності</a><a href="../privacy/alphabet-for-kids.html" data-lang="en">Privacy Policy</a></li>
+                <li>
+                    <div class="lang-switcher">
+                        <button class="lang-btn lang-btn-uk active">UA</button>
+                        <button class="lang-btn lang-btn-en">EN</button>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
@@ -28,85 +35,101 @@
 
         <article class="doc-content">
 
-            <h1>Умови використання (Terms of Use)</h1>
+            <h1 data-lang="uk">Умови використання (Terms of Use)</h1>
+            <h1 data-lang="en">Terms of Use (Terms & Conditions)</h1>
             <p style="color: #666; font-size: 0.95rem; margin-bottom: 2rem;">
-                <strong>Додаток:</strong> Їдея - розумна абетка<br>
-                <strong>Правовласник / Видавець:</strong> ФОП Хроль Олег Сергійович (HroSoft)<br>
-                <strong>Дата набрання чинності:</strong> Жовтень 2026 року
+                <strong data-lang="uk">Додаток:</strong><strong data-lang="en">Application:</strong> Їдея - розумна абетка / Idea - Smart Alphabet for Kids<br>
+                <strong data-lang="uk">Правовласник / Видавець:</strong><strong data-lang="en">Publisher:</strong> ФОП Хроль Олег Сергійович (HroSoft / Khrol Oleh Serhiiovych)<br>
+                <strong data-lang="uk">Дата набрання чинності:</strong><strong data-lang="en">Effective Date:</strong> October 2026
             </p>
 
-            <h2>1. Загальні положення</h2>
-            <p>
-                Ці Умови використання (далі — «Умови») регулюють доступ та використання мобільного додатка <strong>«Їдея - розумна абетка»</strong> (далі — «Додаток»), розробленого та опублікованого Фізичною особою-підприємцем Хролем Олегом Сергійовичем (торговельна марка / бренд HroSoft).
-            </p>
-            <p>
-                Завантажуючи, встановлюючи або використовуючи Додаток, ви погоджуєтеся з цими Умовами. Якщо ви не погоджуєтеся з будь-яким із положень цих Умов, ви не можете використовувати Додаток і зобов’язані видалити його зі свого пристрою.
-            </p>
+            <!-- Ukrainian Content -->
+            <div data-lang="uk">
+                <h2>1. Загальні положення</h2>
+                <p>
+                    Ці Умови використання (далі — «Умови») регулюють доступ та використання мобільного додатка <strong>«Їдея - розумна абетка»</strong> (далі — «Додаток»), розробленого та опублікованого Фізичною особою-підприємцем Хролем Олегом Сергійовичем (торговельна марка / бренд HroSoft).
+                </p>
+                <p>
+                    Завантажуючи, встановлюючи або використовуючи Додаток, ви погоджуєтеся з цими Умовами. Якщо ви не погоджуєтеся з будь-яким із положень цих Умов, ви не можете використовувати Додаток і зобов’язані видалити його зі свого пристрою.
+                </p>
 
-            <h2>2. Ліцензія на використання та призначення</h2>
-            <p>
-                Вам надається обмежена, невиключна, відклична ліцензія без права передачі на завантаження, встановлення та використання Додатка виключно для особистих некомерційних освітніх цілей.
-            </p>
-            <p>
-                Додаток призначений як допоміжний інтерактивний інструмент для вивчення звуків та читання дітьми під наглядом батьків або законних представників.
-            </p>
+                <h2>2. Ліцензія на використання та призначення</h2>
+                <p>
+                    Вам надається обмежена, невиключна, відклична ліцензія без права передачі на завантаження, встановлення та використання Додатка виключно для особистих некомерційних освітніх цілей.
+                </p>
 
-            <h2>3. Платні підписки та внутрішньододаткові покупки (Google Play Billing)</h2>
-            <ul>
-                <li><strong>Монетизація:</strong> Додаток містить як безкоштовний навчальний контент, так і розширені функції, доступні за платними автопоновлюваними підписками або одноразовими покупками.</li>
-                <li><strong>Обробка платежів:</strong> Усі платежі, транзакції та обробка банківських даних здійснюються виключно через офіційну платіжну систему <strong>Google Play Billing</strong> відповідно до Правил Google Play. HroSoft не отримує та не зберігає деталі ваших платіжних карт.</li>
-                <li><strong>Автоматичне поновлення:</strong> Підписка поновлюється автоматично на новий термін, якщо вона не була скасована користувачем принаймні за 24 години до закінчення поточного розрахункового періоду.</li>
-                <li><strong>Керування та скасування:</strong> Ви можете у будь-який момент скасувати підписку або змінити тарифний план через налаштування вашого акаунту Google Play (Розділ «Підписки» у додатку Google Play).</li>
-                <li><strong>Повернення коштів (Refunds):</strong> Повернення коштів за здійснені покупки регулюється стандартною Політикою повернення коштів Google Play (Google Play Refund Policy).</li>
-            </ul>
+                <h2>3. Платні підписки та внутрішньододаткові покупки (Google Play Billing)</h2>
+                <ul>
+                    <li><strong>Монетизація:</strong> Додаток містить як безкоштовний навчальний контент, так і розширені функції, доступні за платними автопоновлюваними підписками або одноразовими покупками.</li>
+                    <li><strong>Обробка платежів:</strong> Усі платежі, транзакції та обробка банківських даних здійснюються виключно через офіційну платіжну систему <strong>Google Play Billing</strong> відповідно до Правил Google Play.</li>
+                    <li><strong>Автоматичне поновлення:</strong> Підписка поновлюється автоматично на новий термін, якщо вона не була скасована користувачем принаймні за 24 години до закінчення поточного розрахункового періоду.</li>
+                    <li><strong>Керування та скасування:</strong> Ви можете у будь-який момент скасувати підписку або змінити тарифний план через налаштування вашого акаунту Google Play.</li>
+                    <li><strong>Повернення коштів:</strong> Повернення коштів регулюється стандартною Політикою повернення коштів Google Play (Google Play Refund Policy).</li>
+                </ul>
 
-            <h2>4. Інтелектуальна власність</h2>
-            <p>
-                Усі майнові та немайнові права інтелектуальної власності на Додаток (включаючи програмний код, графічний дизайн, логотипи, дикторські аудіозаписи, навчальні методики та текстові матеріали) належать ФОП Хролю Олегу Сергійовичу.
-            </p>
-            <p>Користувачеві категорично забороняється:</p>
-            <ul>
-                <li>Копіювати, модифікувати, реверс-інжинірити чи декомпілювати код Додатка;</li>
-                <li>Витягувати та використовувати аудіозаписи, графіку чи контент Додатка у комерційних цілях поза Додатком;</li>
-                <li>Передавати права на ліцензію третім особам чи створювати похідні продукти.</li>
-            </ul>
+                <h2>4. Інтелектуальна власність</h2>
+                <p>
+                    Усі майнові та немайнові права інтелектуальної власності на Додаток (включаючи програмний код, графічний дизайн, логотипи, дикторські аудіозаписи, навчальні методики та текстові матеріали) належать ФОП Хролю Олегу Сергійовичу.
+                </p>
 
-            <h2>5. Конфіденційність та захист даних</h2>
-            <p>
-                Обробка даних користувачів здійснюється відповідно до нашої <a href="../privacy/alphabet-for-kids.html">Політики конфіденційності</a>. Додаток розроблено з урахуванням стандартів безпеки для дітей та не збирає особистих ідентифікаційних даних.
-            </p>
+                <h2>5. Обмеження відповідальності (Disclaimer)</h2>
+                <p>
+                    Додаток надається за принципом <strong>«як є» (AS IS)</strong>. Розробник робить усе можливе для забезпечення стабільної роботи Додатка, проте не гарантує безперебійності за відсутності інтернет-з'єднання чи збоїв сервісів Google.
+                </p>
 
-            <h2>6. Обмеження відповідальності (Disclaimer)</h2>
-            <p>
-                Додаток надається за принципом <strong>«як є» (AS IS)</strong>. Розробник робить усе можливе для забезпечення стабільної та якісної роботи Додатка, проте не гарантує:
-            </p>
-            <ul>
-                <li>Абсолютної безперебійності роботи Додатка у разі відсутності інтернет-з'єднання чи збоїв сервісів Google;</li>
-                <li>Гарантованих конкретних часових результатів навчання дитини, оскільки швидкість засвоєння матеріалу залежить від індивідуальних особливостей кожної дитини.</li>
-            </ul>
+                <h2>6. Застосовне право та Контакти</h2>
+                <p>Ці Умови регулюються та тлумачаться відповідно до чинного законодавства України.</p>
+                <p>📧 <strong>Support Email:</strong> <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a></p>
+            </div>
 
-            <h2>7. Зміни до Умов та застосовне право</h2>
-            <p>
-                Розробник залишає за собою право час від часу оновлювати ці Умови. Оновлена версія набуває чинності з моменту її публікації на цьому сайті.
-            </p>
-            <p>
-                Ці Умови регулюються та тлумачаться відповідно до чинного законодавства України. Усі спори підлягають вирішенню шляхом переговорів або відповідно до законодавства України.
-            </p>
+            <!-- English Content -->
+            <div data-lang="en">
+                <h2>1. General Provisions</h2>
+                <p>
+                    These Terms of Use ("Terms") govern access to and use of the mobile application <strong>"Idea - Smart Alphabet for Kids"</strong> ("Application"), developed and published by Sole Proprietor Khrol Oleh Serhiiovych (HroSoft).
+                </p>
+                <p>
+                    By downloading, installing, or accessing the Application, you agree to be bound by these Terms. If you do not agree to all terms, please do not install or use the Application.
+                </p>
 
-            <h2>8. Контакти розробника</h2>
-            <p>
-                З усіх питань щодо використання Додатка, підписок або зворотного зв'язку звертайтеся за електронною поштою:
-                <br>
-                📧 <strong>Support Email:</strong> <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a>
-                <br>
-                🌐 <strong>Сайт:</strong> <a href="https://hrosoft.com.ua">https://hrosoft.com.ua</a>
-            </p>
+                <h2>2. Grant of License</h2>
+                <p>
+                    You are granted a limited, non-exclusive, non-transferable, revocable license to install and use the Application strictly for personal, non-commercial educational purposes under parental supervision.
+                </p>
+
+                <h2>3. Subscriptions & Google Play Billing</h2>
+                <ul>
+                    <li><strong>Monetization:</strong> The Application features free foundational modules and premium features unlocked via paid auto-renewable subscriptions or in-app purchases.</li>
+                    <li><strong>Payment Processing:</strong> All financial transactions are processed securely through <strong>Google Play Billing</strong> in accordance with Google Play Terms of Service. HroSoft never collects or stores credit card details.</li>
+                    <li><strong>Auto-Renewal:</strong> Subscriptions renew automatically unless canceled by the user at least 24 hours prior to the expiration of the current billing cycle.</li>
+                    <li><strong>Management & Cancellation:</strong> Users can modify or cancel subscriptions at any time through Google Play Account Settings.</li>
+                    <li><strong>Refunds:</strong> Refunds are handled pursuant to the standard Google Play Refund Policy.</li>
+                </ul>
+
+                <h2>4. Intellectual Property Rights</h2>
+                <p>
+                    All intellectual property rights in the Application—including source code, graphic designs, logos, audio recordings, educational algorithms, and copy—are owned exclusively by Sole Proprietor Khrol Oleh Serhiiovych (HroSoft).
+                </p>
+
+                <h2>5. Limitation of Liability</h2>
+                <p>
+                    The Application is provided on an <strong>"AS IS"</strong> and "AS AVAILABLE" basis without warranties of any kind. HroSoft shall not be liable for indirect or consequential damages arising from app usage or temporary service interruptions.
+                </p>
+
+                <h2>6. Governing Law & Contact</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of Ukraine.</p>
+                <p>📧 <strong>Support Email:</strong> <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a></p>
+            </div>
 
             <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eee; display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="../apps/alphabet-for-kids.html" class="btn btn-primary">Про додаток Їдея</a>
-                <a href="../privacy/alphabet-for-kids.html" class="btn btn-secondary">Політика Конфіденційності</a>
-                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary">Інструкція</a>
-                <a href="../index.html" class="btn btn-secondary">← До списку додатків</a>
+                <a href="../apps/alphabet-for-kids.html" class="btn btn-primary" data-lang="uk">Про додаток Їдея</a>
+                <a href="../apps/alphabet-for-kids.html" class="btn btn-primary" data-lang="en">About App</a>
+                <a href="../privacy/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Політика Конфіденційності</a>
+                <a href="../privacy/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">Privacy Policy</a>
+                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Інструкція</a>
+                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">User Guide</a>
+                <a href="../index.html" class="btn btn-secondary" data-lang="uk">← До списку додатків</a>
+                <a href="../index.html" class="btn btn-secondary" data-lang="en">← Back to App Directory</a>
             </div>
 
         </article>
@@ -117,12 +140,8 @@
     <footer>
         <div class="footer-container">
             <div>
-                &copy; 2026 HroSoft. Всі права захищені.
+                &copy; 2026 HroSoft. <span data-lang="uk">Всі права захищені.</span><span data-lang="en">All rights reserved.</span>
             </div>
-            <!--<div class="footer-links">
-                <a href="../apps/alphabet-for-kids.html">Про додаток</a>
-                <a href="../privacy/alphabet-for-kids.html">Політика конфіденційності</a>
-            </div>-->
         </div>
     </footer>
 

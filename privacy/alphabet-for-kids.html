@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Політика конфіденційності — Їдея - розумна абетка</title>
-    <meta name="description" content="Політика конфіденційності мобільного додатка Їдея - розумна абетка.">
+    <title>Політика конфіденційності — Їдея - розумна абетка / Privacy Policy</title>
+    <meta name="description" content="Політика конфіденційності мобільного додатка Їдея - розумна абетка. Privacy Policy for Idea - Smart Alphabet for Kids.">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/lang-switcher.js" defer></script>
 </head>
 <body>
 
@@ -13,11 +14,17 @@
     <header>
         <div class="nav-container">
             <a href="../index.html" class="logo">
-                <!--🧠-->🐰 Hro<span>Soft</span>
+                🐰 Hro<span>Soft</span>
             </a>
             <ul class="nav-links">
-                <li><a href="../index.html#apps">← На головну</a></li>
-                <li><a href="../apps/alphabet-for-kids.html">Про додаток</a></li>
+                <li><a href="../index.html#apps" data-lang="uk">← На головну</a><a href="../index.html#apps" data-lang="en">← Home Page</a></li>
+                <li><a href="../apps/alphabet-for-kids.html" data-lang="uk">Про додаток</a><a href="../apps/alphabet-for-kids.html" data-lang="en">About App</a></li>
+                <li>
+                    <div class="lang-switcher">
+                        <button class="lang-btn lang-btn-uk active">UA</button>
+                        <button class="lang-btn lang-btn-en">EN</button>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
@@ -27,79 +34,124 @@
 
         <article class="doc-content">
 
-            <h1>Політика конфіденційності</h1>
+            <h1 data-lang="uk">Політика конфіденційності</h1>
+            <h1 data-lang="en">Privacy Policy</h1>
             <p style="color: #666; font-size: 0.95rem; margin-bottom: 2rem;">
-                <strong>Додаток:</strong> Їдея - розумна абетка<br>
-                <strong>Дата останнього оновлення:</strong> Жовтень 2026 року
+                <strong data-lang="uk">Додаток:</strong><strong data-lang="en">Application:</strong> Їдея - розумна абетка / Idea - Smart Alphabet for Kids<br>
+                <strong data-lang="uk">Дата оновлення:</strong><strong data-lang="en">Last Updated:</strong> October 2026
             </p>
 
-            <!--<div class="placeholder-box">
-                📌 <strong>Місце для Політики Конфіденційності:</strong> Нижче розташовано підготовлену заготовку Політики Конфіденційності, яка відповідає вимогам Google Play Console. Ви можете замінити або доповнити її вашим власним документом.
-            </div>-->
+            <!-- Ukrainian Content -->
+            <div data-lang="uk">
+                <h2>1. Збір та використання даних</h2>
+                <p>
+                    Ми поважаємо приватність наших користувачів, особливо дітей.
+                    Наш Додаток <strong>НЕ збирає, не зберігає та не обробляє персональні дані</strong>, які дозволяють ідентифікувати особу (такі як справжнє ім'я, адреса проживання, номер телефону чи електронна пошта).
+                </p>
+                <p>Для забезпечення функціонування Додатку та адаптивного навчання ми збираємо лише анонімні навчальні метрики:</p>
+                <ul>
+                    <li>Прогрес виконання вправ (відсоток правильних відповідей, час виконання, кількість спроб);</li>
+                    <li>Загальну статистику взаємодії з навчальними матеріалами.</li>
+                </ul>
+                <p>Ці дані використовуються виключно для алгоритму автоматичної генерації індивідуальних уроків під рівень дитини та покращення навчального процесу.</p>
 
-            <!-- ======================================================= -->
-            <!-- ВСТАВТЕ ВАШ ТЕКСТ ПОЛІТИКИ НИЖЧЕ (START PRIVACY POLICY)   -->
-            <!-- ======================================================= -->
+                <h2>2. Ідентифікація та авторизація</h2>
+                <p>
+                    Додаток використовує анонімну систему автентифікації (Firebase Anonymous Authentication). Користувачеві призначається випадковий унікальний ідентифікатор (ID), який не пов'язаний із жодними персональними даними.
+                </p>
 
-            <h2>1. Збір та використання даних</h2>
-            <p>
-                Ми поважаємо приватність наших користувачів, особливо дітей.
-                Наш Додаток <strong>НЕ збирає, не зберігає та не обробляє персональні дані</strong>, які дозволяють ідентифікувати особу (такі як справжнє ім'я, адреса проживання, номер телефону чи електронна пошта).
-            </p>
-            <p>Для забезпечення функціонування Додатку та адаптивного навчання ми збираємо лише анонімні навчальні метрики:</p>
-            <ul>
-                <li>Прогрес виконання вправ (відсоток правильних відповідей, час виконання, кількість спроб);</li>
-                <li>Загальну статистику взаємодії з навчальними матеріалами.</li>
-            </ul>
-            <p>Ці дані використовуються виключно для алгоритму автоматичної генерації індивідуальних уроків під рівень дитини та покращення навчального процесу.</p>
+                <h2>3. Дозволи пристрою</h2>
+                <p>Додаток може запитувати доступ до функцій вашого пристрою лише за вашої згоди та для забезпечення конкретних функцій:</p>
+                <ul>
+                    <li><strong>Доступ до мікрофону (запис звуку):</strong> використовується виключно для розпізнавання мовлення під час виконання вправ на вимову або для локального запису звуків.</li>
+                    <li><strong>Доступ до камери:</strong> використовується виключно для сканування QR-кодів під час синхронізації пристроїв.</li>
+                </ul>
+                <p>
+                    Аудіозаписи та зображення з камери використовуються для обробки у реальному часі і не використовуються для ідентифікації користувача.
+                </p>
 
-            <h2>2. Ідентифікація та авторизація</h2>
-            <p>
-                Додаток використовує анонімну систему автентифікації (Firebase Anonymous Authentication). Користувачеві призначається випадковий унікальний ідентифікатор (ID), який не пов'язаний із жодними персональними даними.
-            </p>
+                <h2>4. Сторонні сервіси та аналітика</h2>
+                <p>Для забезпечення стабільної роботи, анонімного збереження прогресу навчання та покращення якості додатка ми використовуємо сторонні сервіси Google:</p>
+                <ul>
+                    <li><strong>Google Firebase</strong> (Firebase Auth, Firestore, Analytics, Crashlytics) — для анонімного збереження прогресу та аналізу стабільності роботи додатку.</li>
+                </ul>
 
-            <h2>3. Дозволи пристрою</h2>
-            <p>Додаток може запитувати доступ до функцій вашого пристрою лише за вашої згоди та для забезпечення конкретних функцій:</p>
-            <ul>
-                <li><strong>Доступ до мікрофону (запис звуку):</strong> використовується виключно для розпізнавання мовлення під час виконання вправ на вимову або для локального запису звуків.</li>
-                <li><strong>Доступ до камери:</strong> використовується виключно для сканування QR-кодів під час синхронізації пристроїв.</li>
-            </ul>
-            <p>
-                Аудіозаписи та зображення з камери використовуються для обробки у реальному часі і не використовуються для ідентифікації користувача.
-            </p>
-            <h2>4. Сторонні сервіси та аналітика</h2>
-            <p>Для забезпечення стабільної роботи, анонімного збереження прогресу навчання та покращення якості додатка ми використовуємо сторонні сервіси Google:</p>
-            <ul>
-                <li><strong>Google Firebase</strong> (Firebase Auth, Firestore, Analytics, Crashlytics) — для анонімного збереження прогресу та аналізу стабільності роботи додатку.</li>
-            </ul>
-            <p>
-                Усі сторонні сервіси обробляють дані у знеособленому вигляді відповідно до своїх політик конфіденційності.
-            </p>
+                <h2>5. Захист даних дітей</h2>
+                <p>
+                    Наш додаток розроблено з урахуванням стандартів безпеки для дітей (включаючи вимоги Google Play Families Policy та COPPA). Ми свідомо не збираємо жодних персональних даних дітей.
+                </p>
 
-            <h2>5. Захист даних дітей</h2>
-            <p>
-                Наш додаток розроблено з урахуванням стандартів безпеки для дітей (включаючи вимоги Google Play Families Policy та COPPA). Ми свідомо не збираємо жодних персональних даних дітей.
-            </p>
-            <h2>6. Зміни до цієї Політики</h2>
-            <p>
-                Ми можемо час від часу оновлювати нашу Політику конфіденційності. Усі зміни набувають чинності з моменту їх публікації в Додатку або на нашому офіційному сайті.
-            </p>
-            <h2>7. Контакти</h2>
+                <h2>6. Зміни до цієї Політики</h2>
+                <p>
+                    Ми можемо час від часу оновлювати нашу Політику конфіденційності. Усі зміни набувають чинності з моменту їх публікації в Додатку або на нашому офіційному сайті.
+                </p>
 
-            <p>
-                Якщо у вас виникли запитання щодо цієї Політики конфіденційності, ви можете зв'язатися з нами за електронною поштою:
-                <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a>
-            </p>
+                <h2>7. Контакти</h2>
+                <p>
+                    Якщо у вас виникли запитання щодо цієї Політики конфіденційності, ви можете зв'язатися з нами за електронною поштою:
+                    <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a>
+                </p>
+            </div>
 
-            <!-- ======================================================= -->
-            <!-- КІНЕЦЬ ТЕКСТУ ПОЛІТИКИ (END PRIVACY POLICY)             -->
-            <!-- ======================================================= -->
+            <!-- English Content -->
+            <div data-lang="en">
+                <h2>1. Data Collection and Usage</h2>
+                <p>
+                    We strictly respect the privacy of our users, especially children.
+                    Our Application <strong>DOES NOT collect, store, process, or share personally identifiable information (PII)</strong> such as real names, physical addresses, phone numbers, or email addresses.
+                </p>
+                <p>To power adaptive AI learning features, we collect non-personally identifiable, aggregated learning metrics:</p>
+                <ul>
+                    <li>Exercise completion progress (score accuracy percentage, response latency, attempt counts);</li>
+                    <li>General interaction metrics with educational modules.</li>
+                </ul>
+                <p>These metrics are utilized exclusively by our smart algorithm to dynamically generate personalized lessons tailored to each child's skill level.</p>
+
+                <h2>2. Authentication and Identifiers</h2>
+                <p>
+                    The Application utilizes Firebase Anonymous Authentication. Each device is assigned a randomized unique token that is completely detached from personal identity or credentials.
+                </p>
+
+                <h2>3. Device Permissions</h2>
+                <p>The Application requests device permissions strictly with user consent for dedicated interactive features:</p>
+                <ul>
+                    <li><strong>Microphone Permission (Audio Recording):</strong> Used solely on-device for speech recognition during pronunciation exercises and local customization.</li>
+                    <li><strong>Camera Permission:</strong> Used solely for scanning QR codes during secondary device linking.</li>
+                </ul>
+                <p>Audio inputs and camera frames are processed in real-time on-device and are never stored or transmitted for user identification.</p>
+
+                <h2>4. Third-Party Services</h2>
+                <p>To maintain app stability and cloud backup of anonymous student progress, we utilize trusted Google services:</p>
+                <ul>
+                    <li><strong>Google Firebase</strong> (Firebase Auth, Firestore, Analytics, Crashlytics) — used exclusively for anonymized progress persistence and stability reporting.</li>
+                </ul>
+
+                <h2>5. Children's Privacy Protection (COPPA & Families Policy)</h2>
+                <p>
+                    Our application complies fully with the Children's Online Privacy Protection Act (COPPA) and Google Play Families Policy guidelines. We intentionally refrain from requesting or collecting personal data from children under 13.
+                </p>
+
+                <h2>6. Changes to This Privacy Policy</h2>
+                <p>
+                    We may update our Privacy Policy periodically. Any modifications take immediate effect upon being published on this page.
+                </p>
+
+                <h2>7. Contact Us</h2>
+                <p>
+                    If you have questions or feedback regarding this Privacy Policy, please contact us at:
+                    <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a>
+                </p>
+            </div>
 
             <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eee; display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="../apps/alphabet-for-kids.html" class="btn btn-primary">Про додаток Їдея</a>
-                <a href="../terms/alphabet-for-kids.html" class="btn btn-secondary">Умови Використання</a>
-                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary">Інструкція</a>
-                <a href="../index.html" class="btn btn-secondary">← До списку додатків</a>
+                <a href="../apps/alphabet-for-kids.html" class="btn btn-primary" data-lang="uk">Про додаток Їдея</a>
+                <a href="../apps/alphabet-for-kids.html" class="btn btn-primary" data-lang="en">About App</a>
+                <a href="../terms/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Умови Використання</a>
+                <a href="../terms/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">Terms of Use</a>
+                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Інструкція</a>
+                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">User Guide</a>
+                <a href="../index.html" class="btn btn-secondary" data-lang="uk">← До списку додатків</a>
+                <a href="../index.html" class="btn btn-secondary" data-lang="en">← Back to App Directory</a>
             </div>
 
         </article>
@@ -110,12 +162,8 @@
     <footer>
         <div class="footer-container">
             <div>
-                &copy; 2026 HroSoft. Всі права захищені.
+                &copy; 2026 HroSoft. <span data-lang="uk">Всі права захищені.</span><span data-lang="en">All rights reserved.</span>
             </div>
-            <!--<div class="footer-links">
-                <a href="../apps/alphabet-for-kids.html">Про додаток Їдея</a>
-                <a href="../terms/alphabet-for-kids.html">Умови використання</a>
-            </div>-->
         </div>
     </footer>
 

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HroSoft — Інтерактивні та Навчальні Додатки для Дітей</title>
-    <meta name="description" content="Розробка сучасних, безпечних та якісних освітніх мобільних додатків для дітей.">
+    <title>HroSoft — Інтерактивні та Навчальні Додатки для Дітей / Educational Apps for Kids</title>
+    <meta name="description" content="Розробка сучасних, безпечних та якісних освітніх мобільних додатків для дітей. Educational apps for kids.">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang-switcher.js" defer></script>
 </head>
 <body>
 
@@ -13,12 +14,18 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <!--🧠-->🐰 Hro<span>Soft</span>
+                🐰 Hro<span>Soft</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#apps">Додатки</a></li>
-                <li><a href="#about">Про студію</a></li>
-                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#apps" data-lang="uk">Додатки</a><a href="#apps" data-lang="en">Apps</a></li>
+                <li><a href="#about" data-lang="uk">Про студію</a><a href="#about" data-lang="en">About Us</a></li>
+                <li><a href="#contact" data-lang="uk">Контакти</a><a href="#contact" data-lang="en">Contact</a></li>
+                <li>
+                    <div class="lang-switcher">
+                        <button class="lang-btn lang-btn-uk active">UA</button>
+                        <button class="lang-btn lang-btn-en">EN</button>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
@@ -28,13 +35,20 @@
 
         <!-- Hero Section -->
         <section class="hero">
-            <h1>Навчальні та розвиваючі додатки для дітей</h1>
-            <p>Ми створюємо безпечні, сучасні та інтерактивні мобільні додатки, які допомагають дітям вчитися читати, мислити та пізнавати світ із задоволенням.</p>
+            <div data-lang="uk">
+                <h1>Навчальні та розвиваючі додатки для дітей</h1>
+                <p>Ми створюємо безпечні, сучасні та інтерактивні мобільні додатки, які допомагають дітям вчитися читати, мислити та пізнавати світ із задоволенням.</p>
+            </div>
+            <div data-lang="en">
+                <h1>Educational & Interactive Apps for Kids</h1>
+                <p>We craft safe, modern, and engaging mobile applications designed to help children learn reading, critical thinking, and exploring the world with joy.</p>
+            </div>
         </section>
 
         <!-- Apps Section -->
         <section id="apps">
-            <h2 class="section-title">Наші додатки</h2>
+            <h2 class="section-title" data-lang="uk">Наші додатки</h2>
+            <h2 class="section-title" data-lang="en">Our Applications</h2>
 
             <div class="app-grid">
 
@@ -43,25 +57,37 @@
                     <div class="app-header">
                         <div class="app-icon-blue">Ї</div>
                         <div class="app-title">
-                            <h3>Їдея - розумна абетка</h3>
-                            <span class="app-badge">Освіта / Навчання</span>
+                            <h3 data-lang="uk">Їдея - розумна абетка</h3>
+                            <h3 data-lang="en">Idea - Smart Alphabet for Kids</h3>
+                            <span class="app-badge" data-lang="uk">Освіта / Навчання</span>
+                            <span class="app-badge" data-lang="en">Education / Learning</span>
                         </div>
                     </div>
-                    <p class="app-desc">
+                    <p class="app-desc" data-lang="uk">
                         Інтерактивний додаток для легкого опанування читання через звуковий підхід. Адаптивні уроки, звуковий тренажер та дикторська озвучка.
                     </p>
+                    <p class="app-desc" data-lang="en">
+                        An interactive app for learning reading through a sound-focused phonics method. Adaptive lessons, voice trainer, and studio narration.
+                    </p>
                     <div class="app-actions">
-                        <a href="apps/alphabet-for-kids.html" class="btn btn-primary">Детальніше</a>
-                        <a href="privacy/alphabet-for-kids.html" class="btn btn-secondary">Політика конфіденційності</a>
+                        <a href="apps/alphabet-for-kids.html" class="btn btn-primary" data-lang="uk">Детальніше</a>
+                        <a href="apps/alphabet-for-kids.html" class="btn btn-primary" data-lang="en">Learn More</a>
+                        <a href="privacy/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Політика конфіденційності</a>
+                        <a href="privacy/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">Privacy Policy</a>
                     </div>
                 </div>
 
                 <!-- Placeholder App Card 2 (Future App) -->
                 <div class="app-card placeholder">
-                    <div>
+                    <div data-lang="uk">
                         <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🚀</span>
                         <h3>Незабаром новий додаток</h3>
                         <p style="font-size: 0.9rem; margin-top: 0.5rem;">Ми працюємо над новими цікавими навчальними проєктами для дітей.</p>
+                    </div>
+                    <div data-lang="en">
+                        <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🚀</span>
+                        <h3>New App Coming Soon</h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">We are developing new engaging educational products for children.</p>
                     </div>
                 </div>
 
@@ -70,57 +96,109 @@
 
         <!-- About Section -->
         <section id="about" style="margin-bottom: 3rem;">
-            <h2 class="section-title">Про наш підхід</h2>
+            <h2 class="section-title" data-lang="uk">Про наш підхід</h2>
+            <h2 class="section-title" data-lang="en">Our Pedagogical Approach</h2>
             <div class="doc-content">
-                <p>Наша мета — перетворити час перед екраном на корисний та ефективний навчальний процес. У наших додатках ми дотримуємося принципів:</p>
-                <ul>
-                    <li><strong>Фокус на методиці:</strong> Співпраця з педагогами та логопедами.</li>
-                    <li><strong>Безпека дитини:</strong> Відсутність прихованого збору персональних даних та небажаної реклами.</li>
-                    <li><strong>Індивідуальний темп:</strong> Адаптивність завдань під швидкість засвоєння матеріалу дитиною.</li>
-                </ul>
+                <div data-lang="uk">
+                    <p>Наша мета — перетворити час перед екраном на корисний та ефективний навчальний процес. У наших додатках ми дотримуємося принципів:</p>
+                    <ul>
+                        <li><strong>Фокус на методиці:</strong> Співпраця з педагогами та логопедами.</li>
+                        <li><strong>Безпека дитини:</strong> Відсутність прихованого збору персональних даних та небажаної реклами.</li>
+                        <li><strong>Індивідуальний темп:</strong> Адаптивність завдань під швидкість засвоєння матеріалу дитиною.</li>
+                    </ul>
+                </div>
+                <div data-lang="en">
+                    <p>Our mission is to turn screen time into a fruitful and effective educational experience. In all our applications, we follow strict core principles:</p>
+                    <ul>
+                        <li><strong>Phonics & Pedagogy:</strong> Developed in alignment with speech therapists and educators.</li>
+                        <li><strong>Child Safety First:</strong> Zero personal data tracking, no third-party ads, fully COPPA compliant.</li>
+                        <li><strong>Adaptive Pace:</strong> Smart algorithms tailored to each child's individual learning speed.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- Contact & Legal Section (For Google Play Organization Verification) -->
+        <!-- Contact & Legal Section -->
         <section id="contact">
-            <h2 class="section-title">Контакти та Офіційні Реквізити</h2>
+            <h2 class="section-title" data-lang="uk">Контакти та Офіційні Реквізити</h2>
+            <h2 class="section-title" data-lang="en">Contact & Legal Notice</h2>
             <div class="doc-content">
-                <p>З питань підтримки користувачів, співпраці та звернень щодо мобільних додатків:</p>
-                <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
-                    <li style="margin-bottom: 0.6rem;">
-                        📧 <strong>Електронна пошта підтримки:</strong>
-                        <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a>
-                    </li>
-                    <li style="margin-bottom: 0.6rem;">
-                        📞 <strong>Телефон для довідок:</strong>
-                        <a href="tel:+380982100148">+380 98 210 0148</a>
-                    </li>
-                    <li style="margin-bottom: 0.6rem;">
-                        🌐 <strong>Офіційний сайт розробника:</strong>
-                        <a href="https://hrosoft.com.ua">https://hrosoft.com.ua</a>
-                    </li>
-                </ul>
+                <div data-lang="uk">
+                    <p>З питань підтримки користувачів, співпраці та звернень щодо мобільних додатків:</p>
+                    <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.6rem;">
+                            📧 <strong>Електронна пошта підтримки:</strong>
+                            <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a>
+                        </li>
+                        <li style="margin-bottom: 0.6rem;">
+                            📞 <strong>Телефон для довідок:</strong>
+                            <a href="tel:+380982100148">+380 98 210 0148</a>
+                        </li>
+                        <li style="margin-bottom: 0.6rem;">
+                            🌐 <strong>Офіційний сайт розробника:</strong>
+                            <a href="https://hrosoft.com.ua">https://hrosoft.com.ua</a>
+                        </li>
+                    </ul>
 
-                <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 1.5rem; margin-bottom: 0.6rem; border-top: 1px solid #eee; padding-top: 1rem;">
-                    📋 Юридична інформація розробника (Legal Notice / Impressum)
-                </h3>
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 0.4rem;">
-                        <strong>Суб'єкт господарювання:</strong> ФОП Хроль Олег Сергійович (Khrol Oleh Serhiiovych)
-                    </li>
-                    <li style="margin-bottom: 0.4rem;">
-                        <strong>Реєстраційний номер (РНОКПП / ІПН):</strong> 2787311793
-                    </li>
-                    <li style="margin-bottom: 0.4rem;">
-                        <strong>D-U-N-S® Number:</strong> 667685095
-                    </li>
-                    <li style="margin-bottom: 0.4rem;">
-                        <strong>Місцезнаходження:</strong> м. Харків, 61172, Україна (Kharkiv, 61172, Ukraine)
-                    </li>
-                    <li style="margin-bottom: 0.4rem;">
-                        <strong>Основний вид діяльності (КВЕД):</strong> 62.01 Комп'ютерне програмування / Розробка мобільного програмного забезпечення
-                    </li>
-                </ul>
+                    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 1.5rem; margin-bottom: 0.6rem; border-top: 1px solid #eee; padding-top: 1rem;">
+                        📋 Юридична інформація розробника (Legal Notice / Impressum)
+                    </h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>Суб'єкт господарювання:</strong> ФОП Хроль Олег Сергійович (Khrol Oleh Serhiiovych)
+                        </li>
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>Реєстраційний номер (РНОКПП / ІПН):</strong> 2787311793
+                        </li>
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>D-U-N-S® Number:</strong> 667685095
+                        </li>
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>Місцезнаходження:</strong> м. Харків, 61172, Україна (Kharkiv, 61172, Ukraine)
+                        </li>
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>Основний вид діяльності (КВЕД):</strong> 62.01 Комп'ютерне програмування / Розробка мобільного програмного забезпечення
+                        </li>
+                    </ul>
+                </div>
+                <div data-lang="en">
+                    <p>For customer support, inquiries, and partnership requests:</p>
+                    <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.6rem;">
+                            📧 <strong>Support Email:</strong>
+                            <a href="mailto:support@hrosoft.com.ua">support@hrosoft.com.ua</a>
+                        </li>
+                        <li style="margin-bottom: 0.6rem;">
+                            📞 <strong>Phone:</strong>
+                            <a href="tel:+380982100148">+380 98 210 0148</a>
+                        </li>
+                        <li style="margin-bottom: 0.6rem;">
+                            🌐 <strong>Official Website:</strong>
+                            <a href="https://hrosoft.com.ua">https://hrosoft.com.ua</a>
+                        </li>
+                    </ul>
+
+                    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 1.5rem; margin-bottom: 0.6rem; border-top: 1px solid #eee; padding-top: 1rem;">
+                        📋 Publisher Information & Legal Impressum
+                    </h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>Publisher Entity:</strong> Sole Proprietor Khrol Oleh Serhiiovych (HroSoft)
+                        </li>
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>Tax Registration Number (INN/РНОКПП):</strong> 2787311793
+                        </li>
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>D-U-N-S® Number:</strong> 667685095
+                        </li>
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>Business Location:</strong> Kharkiv, 61172, Ukraine
+                        </li>
+                        <li style="margin-bottom: 0.4rem;">
+                            <strong>Primary Activity (NACE / KVED):</strong> 62.01 Computer Programming / Mobile Software Development
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -130,12 +208,14 @@
     <footer>
         <div class="footer-container">
             <div>
-                &copy; 2026 HroSoft. Всі права захищені.
+                &copy; 2026 HroSoft. <span data-lang="uk">Всі права захищені.</span><span data-lang="en">All rights reserved.</span>
             </div>
-            <!--<div class="footer-links">
-                <a href="privacy/alphabet-for-kids.html">Політика конфіденційності</a>
-                <a href="terms/alphabet-for-kids.html">Умови використання</a>
-            </div>-->
+            <div class="footer-links">
+                <a href="privacy/alphabet-for-kids.html" data-lang="uk">Політика конфіденційності</a>
+                <a href="privacy/alphabet-for-kids.html" data-lang="en">Privacy Policy</a>
+                <a href="terms/alphabet-for-kids.html" data-lang="uk">Умови використання</a>
+                <a href="terms/alphabet-for-kids.html" data-lang="en">Terms of Use</a>
+            </div>
         </div>
     </footer>
 
