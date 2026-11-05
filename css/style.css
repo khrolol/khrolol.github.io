@@ -170,7 +170,7 @@ header {
     margin-bottom: 1rem;
 }
 
-.app-icon {
+.app-icon, .app-icon-blue {
     width: 64px;
     height: 64px;
     background: #FF7A00;
@@ -181,6 +181,11 @@ header {
     justify-content: center;
     border-radius: 14px;
     font-weight: bold;
+}
+
+.app-icon-blue {
+    background: #2596be;
+    color: #ffe54b;
 }
 
 .app-title h3 {
