@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Їдея - розумна абетка — Про додаток / Idea - Smart Alphabet for Kids</title>
-    <meta name="description" content="Детальна інформація про додаток Їдея - розумна абетка для навчання дітей читанню. Learn reading phonics app for children.">
+    <title>Їдея — розумна абетка | Навчитися читати крок за кроком</title>
+    <meta name="description" content="Розумний додаток для навчання дітей читанню українською мовою через звуки, склади та слова. Адаптивні уроки та перевірка знань.">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Tag Manager / Analytics -->
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-M3L9XRZD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GTM-M3L9XRZD', { 'allow_google_signals': false });
+    </script>
     <script src="../js/lang-switcher.js" defer></script>
+    <script src="../js/landing.js" defer></script>
+    <script src="../js/analytics.js" defer></script>
 </head>
 <body>
 
@@ -18,7 +28,10 @@
             </a>
             <ul class="nav-links">
                 <li><a href="../index.html#apps" data-lang="uk">← На головну</a><a href="../index.html#apps" data-lang="en">← Home Page</a></li>
-                <li><a href="../privacy/alphabet-for-kids.html" data-lang="uk">Політика конфіденційності</a><a href="../privacy/alphabet-for-kids.html" data-lang="en">Privacy Policy</a></li>
+                <li><a href="#demo" data-lang="uk">Демонстрація</a><a href="#demo" data-lang="en">Demo</a></li>
+                <li><a href="#benefits" data-lang="uk">Переваги</a><a href="#benefits" data-lang="en">Benefits</a></li>
+                <li><a href="#how-it-works" data-lang="uk">Як це працює</a><a href="#how-it-works" data-lang="en">How it Works</a></li>
+                <li><a href="../privacy/alphabet-for-kids.html" data-lang="uk">Конфіденційність</a><a href="../privacy/alphabet-for-kids.html" data-lang="en">Privacy</a></li>
                 <li>
                     <div class="lang-switcher">
                         <button class="lang-btn lang-btn-uk active">UA</button>
@@ -32,126 +45,351 @@
     <!-- Main Content Container -->
     <main class="container">
 
-        <article class="doc-content">
+        <!-- ==========================================
+             БЛОК 1. ПЕРШИЙ ЕКРАН (HERO)
+             ========================================== -->
+        <section class="hero" style="text-align: left; padding: 3.5rem 2.5rem; background: linear-gradient(135deg, #FFF6EE 0%, #EBF4FF 100%);">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+                <div style="flex: 1; min-width: 300px;">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                        <img src="../img/alphabet-for-kids_app-icon.png" alt="Їдея - розумна абетка" class="app-icon-img-large">
+                        <div>
+                            <span class="app-badge" data-lang="uk">Освіта • Адаптивне навчання</span>
+                            <span class="app-badge" data-lang="en">Education • Adaptive Phonics</span>
+                            <span class="app-badge" style="background: #e8f5e9; color: #2e7d32; margin-left: 0.4rem;" data-lang="uk">🤖 Для Android</span>
+                            <span class="app-badge" style="background: #e8f5e9; color: #2e7d32; margin-left: 0.4rem;" data-lang="en">🤖 For Android</span>
+                        </div>
+                    </div>
 
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem;">
-                <div style="display: flex; align-items: center; gap: 1.5rem;">
-                    <img src="../img/alphabet-for-kids_app-icon.png" alt="Їдея - розумна абетка" class="app-icon-img-large">
-                    <div>
-                        <h1 data-lang="uk" style="margin-bottom: 0.2rem;">Їдея - розумна абетка</h1>
-                        <h1 data-lang="en" style="margin-bottom: 0.2rem;">Idea - Smart Alphabet for Kids</h1>
-                        <p style="color: #666; font-size: 1.1rem; margin: 0;" data-lang="uk">Адаптивний інтерактивний додаток для вивчення звуків та читання</p>
-                        <p style="color: #666; font-size: 1.1rem; margin: 0;" data-lang="en">Adaptive interactive phonics application for children learning to read</p>
+                    <div data-lang="uk">
+                        <h1 style="font-size: 2.4rem; color: #1a252f; line-height: 1.25; margin-bottom: 1.2rem;">
+                            Навчитися читати — крок за кроком, у власному темпі
+                        </h1>
+                        <p style="font-size: 1.15rem; color: #4a5568; line-height: 1.6; margin-bottom: 2rem;">
+                            «Їдея» допомагає дитині опанувати звуки, склади та слова. Завдання озвучуються, відповіді перевіряються, а уроки підлаштовуються під результати навчання.
+                        </p>
+                    </div>
+
+                    <div data-lang="en">
+                        <h1 style="font-size: 2.4rem; color: #1a252f; line-height: 1.25; margin-bottom: 1.2rem;">
+                            Learn to Read — Step by Step, at Your Own Pace
+                        </h1>
+                        <p style="font-size: 1.15rem; color: #4a5568; line-height: 1.6; margin-bottom: 2rem;">
+                            "Idea" helps children master sounds, syllables, and words. Instructions are narrated, answers verified, and lessons personalized automatically.
+                        </p>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                        <a href="https://play.google.com/store/apps/details?id=com.khrololll.alphabetforkids" target="_blank" class="btn btn-playstore" data-lang="uk" onclick="HroSoftAnalytics.trackGooglePlayClick('hero')">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186A2.373 2.373 0 0 1 3 20.573V3.427c0-.623.235-1.205.609-1.613zm11.6 11.601l2.571 2.571-11.442 6.55 8.871-9.121zm0-2.83l-8.87-9.122 11.441 6.551-2.571 2.571zm2.348 1.415l3.585 2.053a1.498 1.498 0 0 1 0 2.594l-3.585 2.053-2.348-2.348 2.348-2.352z"/></svg>
+                            Завантажити безкоштовно
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.khrololll.alphabetforkids" target="_blank" class="btn btn-playstore" data-lang="en" onclick="HroSoftAnalytics.trackGooglePlayClick('hero')">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186A2.373 2.373 0 0 1 3 20.573V3.427c0-.623.235-1.205.609-1.613zm11.6 11.601l2.571 2.571-11.442 6.55 8.871-9.121zm0-2.83l-8.87-9.122 11.441 6.551-2.571 2.571zm2.348 1.415l3.585 2.053a1.498 1.498 0 0 1 0 2.594l-3.585 2.053-2.348-2.348 2.348-2.352z"/></svg>
+                            Download for Free
+                        </a>
                     </div>
                 </div>
-                <div>
-                    <a href="https://play.google.com/store/apps/details?id=com.khrololll.alphabetforkids" target="_blank" class="btn btn-playstore" data-lang="uk">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186A2.373 2.373 0 0 1 3 20.573V3.427c0-.623.235-1.205.609-1.613zm11.6 11.601l2.571 2.571-11.442 6.55 8.871-9.121zm0-2.83l-8.87-9.122 11.441 6.551-2.571 2.571zm2.348 1.415l3.585 2.053a1.498 1.498 0 0 1 0 2.594l-3.585 2.053-2.348-2.348 2.348-2.352z"/></svg>
-                        Завантажити в Google Play
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.khrololll.alphabetforkids" target="_blank" class="btn btn-playstore" data-lang="en">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186A2.373 2.373 0 0 1 3 20.573V3.427c0-.623.235-1.205.609-1.613zm11.6 11.601l2.571 2.571-11.442 6.55 8.871-9.121zm0-2.83l-8.87-9.122 11.441 6.551-2.571 2.571zm2.348 1.415l3.585 2.053a1.498 1.498 0 0 1 0 2.594l-3.585 2.053-2.348-2.348 2.348-2.352z"/></svg>
-                        Get it on Google Play
-                    </a>
+
+                <div style="flex: 0 0 320px; max-width: 100%; text-align: center;">
+                    <img src="../img/alphabet-for-kids_app-scr-01.jpg" alt="Інтерфейс Їдея" style="width: 100%; max-width: 280px; border-radius: 24px; box-shadow: 0 12px 35px rgba(0,0,0,0.15); border: 4px solid #fff;">
                 </div>
             </div>
+        </section>
 
-            <!-- Ukrainian Content -->
-            <div data-lang="uk">
-                <h2>💡 Про додаток</h2>
-                <p>
-                    «Їдея - розумна абетка» — це сучасний навчальний додаток, розроблений для того, щоб зробити шлях дитини до читання легким, цікавим та ефективним.
-                </p>
 
-                <h2>🎯 Основна методика</h2>
-                <ul>
-                    <li><strong>Фокус на звуках:</strong> Ми навчаємо дитину звуків ([м]), а не буквених назв («ем»), що дозволяє легко зливати звуки у склади та слова. Так рекомендують сучасні логопеди.</li>
-                    <li><strong>Індивідуальний навчальний план:</strong> Адаптивний алгоритм підлаштовується під швидкість засвоєння матеріалу кожною дитиною.</li>
-                    <li><strong>Зручний інтерфейс:</strong> Відсутність відволікаючих сторонніх елементів для максимального занурення в процес.</li>
-                </ul>
+        <!-- ==========================================
+             БЛОК 2. КАРУСЕЛЬ ВІДЕОДЕМОНСТРАЦІЙ
+             ========================================== -->
+        <section id="demo" style="margin-bottom: 4rem;">
+            <h2 class="section-title" data-lang="uk">🎥 Як відбувається навчання</h2>
+            <h2 class="section-title" data-lang="en">🎥 See Learning in Action</h2>
 
-                <h2>🧩 Основні розділи та можливості</h2>
-                <ul>
-                    <li><strong>«Вчитися»:</strong> Динамічні адаптивні модулі (повторення, перевірка знань, перші спроби).</li>
-                    <li><strong>«Додаткові вправи»:</strong> Інтерактивне вивчення букв, складів, слів та тренування вимови.</li>
-                    <li><strong>«Мій голосовий тренажер»:</strong> Можливість запису власного голосу та відпрацювання правильної вимови через мікрофон.</li>
-                    <li><strong>Для батьків:</strong> Керування профілями дітей, анонімне підключення додаткових пристроїв через QR-код.</li>
-                </ul>
-            </div>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="video-placeholder-wrapper">
+                            <img src="../img/alphabet-for-kids_app-scr-02.jpg" alt="Вивчаємо звуки">
+                            <div class="play-overlay-button">▶</div>
+                        </div>
+                        <h3 data-lang="uk" style="margin-bottom: 0.5rem; color: #1a252f;">Відео 1. Вивчаємо звуки</h3>
+                        <h3 data-lang="en" style="margin-bottom: 0.5rem; color: #1a252f;">Video 1. Learning Sounds</h3>
+                        <p class="slide-caption" data-lang="uk">«Починаємо зі звуків, а не назв букв. Так дитині легше навчитися поєднувати їх у склади».</p>
+                        <p class="slide-caption" data-lang="en">"We start with sounds rather than letter names, making it natural for children to blend sounds into syllables."</p>
+                    </div>
 
-            <!-- English Content -->
-            <div data-lang="en">
-                <h2>💡 About the Application</h2>
-                <p>
-                    "Idea - Smart Alphabet for Kids" is an interactive educational application designed to make a child's reading journey engaging, intuitive, and highly effective.
-                </p>
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="video-placeholder-wrapper">
+                            <img src="../img/alphabet-for-kids_app-scr-03.jpg" alt="Складаємо склади">
+                            <div class="play-overlay-button">▶</div>
+                        </div>
+                        <h3 data-lang="uk" style="margin-bottom: 0.5rem; color: #1a252f;">Відео 2. Складаємо склади</h3>
+                        <h3 data-lang="en" style="margin-bottom: 0.5rem; color: #1a252f;">Video 2. Building Syllables</h3>
+                        <p class="slide-caption" data-lang="uk">«Від окремих звуків до складів. Слухаємо, розпізнаємо та поступово вчимося читати».</p>
+                        <p class="slide-caption" data-lang="en">"From individual sounds to syllables. Listen, recognize, and step by step master reading."</p>
+                    </div>
 
-                <h2>🎯 Pedagogical Method</h2>
-                <ul>
-                    <li><strong>Phonics-First Method:</strong> Children learn letter sounds ([m]) rather than letter names ("em"), making sound blending into syllables and words seamless. Recommended by speech therapists.</li>
-                    <li><strong>Adaptive Learning Engine:</strong> Smart backend algorithms customize lesson frequency based on individual child mastery and speed.</li>
-                    <li><strong>Distraction-Free Interface:</strong> Pure educational focus without intrusive third-party ads or irrelevant mini-games.</li>
-                </ul>
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="video-placeholder-wrapper">
+                            <img src="../img/alphabet-for-kids_app-scr-04.jpg" alt="Вчимося розпізнавати слова">
+                            <div class="play-overlay-button">▶</div>
+                        </div>
+                        <h3 data-lang="uk" style="margin-bottom: 0.5rem; color: #1a252f;">Відео 3. Вчимося розпізнавати слова</h3>
+                        <h3 data-lang="en" style="margin-bottom: 0.5rem; color: #1a252f;">Video 3. Word Recognition</h3>
+                        <p class="slide-caption" data-lang="uk">«Вчимося впізнавати слова на слух і пов'язувати звучання з написанням».</p>
+                        <p class="slide-caption" data-lang="en">"Learn to recognize words by ear and link pronunciation directly with writing."</p>
+                    </div>
 
-                <h2>🧩 Key Features & Sections</h2>
-                <ul>
-                    <li><strong>«Learn Mode»:</strong> Dynamic AI-generated modules covering repetition, knowledge checks, and initial reading steps.</li>
-                    <li><strong>«Extra Exercises»:</strong> Interactive practice mode for specific letters, syllables, and vocabulary words.</li>
-                    <li><strong>«My Voice Trainer»:</strong> On-device microphone speech exercises providing pronunciation feedback.</li>
-                    <li><strong>Parental Dashboard:</strong> Manage multi-student profiles, view learning statistics, and securely connect secondary devices via QR code.</li>
-                </ul>
-            </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-slide">
+                        <div class="video-placeholder-wrapper">
+                            <img src="../img/alphabet-for-kids_app-scr-05.jpg" alt="Читаємо слова вголос">
+                            <div class="play-overlay-button">▶</div>
+                        </div>
+                        <h3 data-lang="uk" style="margin-bottom: 0.5rem; color: #1a252f;">Відео 4. Читаємо слова вголос</h3>
+                        <h3 data-lang="en" style="margin-bottom: 0.5rem; color: #1a252f;">Video 4. Reading Aloud</h3>
+                        <p class="slide-caption" data-lang="uk">«Читаємо самостійно. Застосунок розпізнає відповідь і допомагає відстежувати прогрес».</p>
+                        <p class="slide-caption" data-lang="en">"Independent reading. The app listens to speech and tracks reading progress."</p>
+                    </div>
 
-            <!-- App Screenshots Gallery Section -->
-            <div class="screenshot-gallery-container">
-                <h2 data-lang="uk">📸 Скріншоти додатку</h2>
-                <h2 data-lang="en">📸 App Screenshots</h2>
-                <div class="screenshot-gallery">
-                    <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-01.jpg" alt="Screenshot 1"></div>
-                    <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-02.jpg" alt="Screenshot 2"></div>
-                    <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-03.jpg" alt="Screenshot 3"></div>
-                    <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-04.jpg" alt="Screenshot 4"></div>
-                    <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-05.jpg" alt="Screenshot 5"></div>
-                    <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-06.jpg" alt="Screenshot 6"></div>
-                    <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-07.jpg" alt="Screenshot 7"></div>
-                    <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-08.jpg" alt="Screenshot 8"></div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous Slide">‹</button>
+                    <div class="carousel-dots"></div>
+                    <button class="carousel-btn next" aria-label="Next Slide">›</button>
                 </div>
             </div>
-            
+        </section>
+
+
+        <!-- ==========================================
+             БЛОК 3. КАРУСЕЛЬ ПЕРЕВАГ (3D FLIP CARDS)
+             ========================================== -->
+        <section id="benefits" style="margin-bottom: 4rem;">
+            <h2 class="section-title" data-lang="uk">⭐ Переваги для батьків та дітей</h2>
+            <h2 class="section-title" data-lang="en">⭐ Key Advantages</h2>
+            <p style="color: #666; margin-top: -0.8rem; margin-bottom: 1.5rem;" data-lang="uk">Натисніть на картку, щоб дізнатися деталі</p>
+            <p style="color: #666; margin-top: -0.8rem; margin-bottom: 1.5rem;" data-lang="en">Tap any card to flip and reveal details</p>
+
+            <div class="flip-cards-grid">
+
+                <!-- Card 1 -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3 data-lang="uk">Адаптивні уроки</h3>
+                            <h3 data-lang="en">Adaptive Lessons</h3>
+                            <span class="flip-hint" data-lang="uk">Натисніть ↻</span>
+                            <span class="flip-hint" data-lang="en">Tap to flip ↻</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p data-lang="uk">«Кожне прослуховування лексем та кожна відповідь учня враховуються під час генерації наступних уроків. Дитина повторює те, що ще потребує уваги, і поступово переходить до нового матеріалу».</p>
+                            <p data-lang="en">"Every listened sound and student answer is calculated for generating subsequent lessons. Children repeat challenging items and seamlessly progress."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3 data-lang="uk">Дитина навчається — ви підтримуєте</h3>
+                            <h3 data-lang="en">Child Learns — You Support</h3>
+                            <span class="flip-hint" data-lang="uk">Натисніть ↻</span>
+                            <span class="flip-hint" data-lang="en">Tap to flip ↻</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p data-lang="uk">«Завдання та підказки озвучуються. Дитина може самостійно виконувати вправи, а ваше головне завдання — мотивувати, заохочувати та допомагати, коли щось незрозуміло».</p>
+                            <p data-lang="en">"Tasks and hints are narrated. Children can practice independently, allowing parents to focus on encouragement and positive motivation."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3 data-lang="uk">Спочатку звуки, а не назви букв</h3>
+                            <h3 data-lang="en">Sounds First, Not Names</h3>
+                            <span class="flip-hint" data-lang="uk">Натисніть ↻</span>
+                            <span class="flip-hint" data-lang="en">Tap to flip ↻</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p data-lang="uk">«Починаємо зі звуків, які вимовляють у словах, а не з назв букв. Це допомагає дитині зрозуміти, як поєднувати звуки у склади та слова».</p>
+                            <p data-lang="en">"We begin with spoken letter sounds ([m]) rather than alphabet letter names ('em'). This helps children merge sounds into words effortlessly."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3 data-lang="uk">Від звуків до читання</h3>
+                            <h3 data-lang="en">From Phonics to Reading</h3>
+                            <span class="flip-hint" data-lang="uk">Натисніть ↻</span>
+                            <span class="flip-hint" data-lang="en">Tap to flip ↻</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p data-lang="uk">«Послідовно опановуємо звуки, склади та слова. Дитина переходить від прослуховування до розпізнавання та самостійного читання».</p>
+                            <p data-lang="en">"Step-by-step mastery of sounds, syllables, and vocabulary words. Children progress from listening to independent reading."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3 data-lang="uk">Навчання через практику</h3>
+                            <h3 data-lang="en">Practice-Driven Learning</h3>
+                            <span class="flip-hint" data-lang="uk">Натисніть ↻</span>
+                            <span class="flip-hint" data-lang="en">Tap to flip ↻</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p data-lang="uk">«Слухай, знаходь, відповідай, читай. Замість пасивного перегляду відео дитина активно взаємодіє з навчальним матеріалом».</p>
+                            <p data-lang="en">"Listen, find, answer, read. Instead of passive video watching, children actively interact with educational tiles."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3 data-lang="uk">Відстеження прогресу</h3>
+                            <h3 data-lang="en">Progress Tracking</h3>
+                            <span class="flip-hint" data-lang="uk">Натисніть ↻</span>
+                            <span class="flip-hint" data-lang="en">Tap to flip ↻</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p data-lang="uk">«Результати виконання завдань та навчальна статистика допомагають бачити, що дитина вже засвоїла, а над чим ще варто попрацювати».</p>
+                            <p data-lang="en">"Detailed dashboards help parents see exactly what topics are mastered and which need additional practice."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             БЛОК 4. ЯК ВІДБУВАЄТЬСЯ НАВЧАННЯ (4 ЕТАПИ)
+             ========================================== -->
+        <section id="how-it-works" style="margin-bottom: 4rem;">
+            <h2 class="section-title" data-lang="uk">🛤 Послідовність навчання</h2>
+            <h2 class="section-title" data-lang="en">🛤 The 4-Step Learning Path</h2>
+
+            <div class="steps-grid">
+                
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 data-lang="uk">Звуки</h3>
+                    <h3 data-lang="en">Sounds</h3>
+                    <p data-lang="uk">Слухаємо та вчимося розрізняти окремі звуки літер.</p>
+                    <p data-lang="en">Listen and learn to distinguish individual letter sounds.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 data-lang="uk">Склади</h3>
+                    <h3 data-lang="en">Syllables</h3>
+                    <p data-lang="uk">Поєднуємо звуки та засвоюємо складові патерни (ма, ме, мо, му).</p>
+                    <p data-lang="en">Merge sounds into core syllable patterns (ma, me, mo, mu).</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 data-lang="uk">Слова</h3>
+                    <h3 data-lang="en">Words</h3>
+                    <p data-lang="uk">Слухаємо, розпізнаємо та знаходимо слова серед варіантів.</p>
+                    <p data-lang="en">Recognize, listen, and match words on screen.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3 data-lang="uk">Читання</h3>
+                    <h3 data-lang="en">Reading</h3>
+                    <p data-lang="uk">Пробуємо читати слова вголос і отримуємо зворотний зв'язок.</p>
+                    <p data-lang="en">Read words aloud with instant microphone evaluation.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- App Screenshots Gallery Section -->
+        <div class="screenshot-gallery-container">
+            <h2 data-lang="uk">📸 Скріншоти додатку</h2>
+            <h2 data-lang="en">📸 App Screenshots</h2>
+            <div class="screenshot-gallery">
+                <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-01.jpg" alt="Screenshot 1"></div>
+                <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-02.jpg" alt="Screenshot 2"></div>
+                <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-03.jpg" alt="Screenshot 3"></div>
+                <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-04.jpg" alt="Screenshot 4"></div>
+                <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-05.jpg" alt="Screenshot 5"></div>
+                <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-06.jpg" alt="Screenshot 6"></div>
+                <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-07.jpg" alt="Screenshot 7"></div>
+                <div class="screenshot-item"><img src="../img/alphabet-for-kids_app-scr-08.jpg" alt="Screenshot 8"></div>
+            </div>
+        </div>
+
+
+        <!-- Open Source Licenses -->
+        <div class="doc-content" style="margin-bottom: 3rem;">
+            <h2 data-lang="uk">Використані компоненти та Open Source ліцензії:</h2>
+            <h2 data-lang="en">Open Source Libraries & Components:</h2>
+            <ol>
+                <li> Retrofit &amp; OkHttp - Copyright 2013 Square, Inc. (Apache 2.0)</li>
+                <li> ZXing Barcode Scanning Library - Copyright 2005 ZXing authors (Apache 2.0)</li>
+                <li> Google Gson &amp; Firebase SDKs - Copyright Google LLC (Apache 2.0)</li>
+                <li> Jackson JSON Processor - FasterXML, LLC (Apache 2.0)</li>
+                <li> Jetpack Compose &amp; AndroidX Libraries - Copyright Google LLC / Android Open Source Project (Apache 2.0)</li>
+            </ol>
+        </div>
+
+
+        <!-- ==========================================
+             БЛОК 8. ФІНАЛЬНИЙ ЗАКЛИК ДО ВСТАНОВЛЕННЯ (CTA)
+             ========================================== -->
+        <section class="hero" style="background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%); color: #ffffff; padding: 3.5rem 2rem;">
             <div data-lang="uk">
-                <h2>Використані компоненти та Open Source ліцензії:</h2>
-                <ol>
-                    <li> Retrofit &amp; OkHttp (Мережева взаємодія) - Copyright 2013 Square, Inc. (Apache 2.0)</li>
-                    <li> ZXing Barcode Scanning Library - Copyright 2005 ZXing authors (Apache 2.0)</li>
-                    <li> Google Gson &amp; Firebase SDKs - Copyright Google LLC (Apache 2.0)</li>
-                    <li> Jackson JSON Processor - FasterXML, LLC (Apache 2.0)</li>
-                    <li> Jetpack Compose &amp; AndroidX Libraries - Copyright Google LLC / Android Open Source Project (Apache 2.0)</li>
-                </ol>
+                <h2 style="font-size: 2.2rem; color: #ffffff; margin-bottom: 1rem;">
+                    Допоможіть дитині зробити перші кроки до читання
+                </h2>
+                <p style="font-size: 1.15rem; color: #e2e8f0; max-width: 650px; margin: 0 auto 2rem auto;">
+                    Почніть із простого: слухайте звуки, складайте склади та відкривайте перші слова з додатком «Їдея».
+                </p>
             </div>
-
             <div data-lang="en">
-                <h2>Open Source Libraries & Components:</h2>
-                <ol>
-                    <li> Retrofit &amp; OkHttp - Copyright 2013 Square, Inc. (Apache 2.0)</li>
-                    <li> ZXing Barcode Scanning Library - Copyright 2005 ZXing authors (Apache 2.0)</li>
-                    <li> Google Gson &amp; Firebase SDKs - Copyright Google LLC (Apache 2.0)</li>
-                    <li> Jackson JSON Processor - FasterXML, LLC (Apache 2.0)</li>
-                    <li> Jetpack Compose &amp; AndroidX Libraries - Copyright Google LLC / Android Open Source Project (Apache 2.0)</li>
-                </ol>
+                <h2 style="font-size: 2.2rem; color: #ffffff; margin-bottom: 1rem;">
+                    Help Your Child Take the First Steps in Reading
+                </h2>
+                <p style="font-size: 1.15rem; color: #e2e8f0; max-width: 650px; margin: 0 auto 2rem auto;">
+                    Start simple: listen to sounds, build syllables, and unlock vocabulary with "Idea".
+                </p>
             </div>
 
-            <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eee; display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="../privacy/alphabet-for-kids.html" class="btn btn-primary" data-lang="uk">Політика Конфіденційності</a>
-                <a href="../privacy/alphabet-for-kids.html" class="btn btn-primary" data-lang="en">Privacy Policy</a>
-                <a href="../terms/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Умови Використання</a>
-                <a href="../terms/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">Terms of Use</a>
-                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary" data-lang="uk">Інструкція</a>
-                <a href="../instruction/alphabet-for-kids.html" class="btn btn-secondary" data-lang="en">User Guide</a>
-                <a href="../index.html" class="btn btn-secondary" data-lang="uk">← До списку додатків</a>
-                <a href="../index.html" class="btn btn-secondary" data-lang="en">← Back to App Directory</a>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://play.google.com/store/apps/details?id=com.khrololll.alphabetforkids" target="_blank" class="btn btn-playstore" data-lang="uk" onclick="HroSoftAnalytics.trackGooglePlayClick('bottom_cta')">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186A2.373 2.373 0 0 1 3 20.573V3.427c0-.623.235-1.205.609-1.613zm11.6 11.601l2.571 2.571-11.442 6.55 8.871-9.121zm0-2.83l-8.87-9.122 11.441 6.551-2.571 2.571zm2.348 1.415l3.585 2.053a1.498 1.498 0 0 1 0 2.594l-3.585 2.053-2.348-2.348 2.348-2.352z"/></svg>
+                    Завантажити «Їдея» безкоштовно
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.khrololll.alphabetforkids" target="_blank" class="btn btn-playstore" data-lang="en" onclick="HroSoftAnalytics.trackGooglePlayClick('bottom_cta')">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186A2.373 2.373 0 0 1 3 20.573V3.427c0-.623.235-1.205.609-1.613zm11.6 11.601l2.571 2.571-11.442 6.55 8.871-9.121zm0-2.83l-8.87-9.122 11.441 6.551-2.571 2.571zm2.348 1.415l3.585 2.053a1.498 1.498 0 0 1 0 2.594l-3.585 2.053-2.348-2.348 2.348-2.352z"/></svg>
+                    Download "Idea" for Free
+                </a>
             </div>
-
-        </article>
+        </section>
 
     </main>
 
@@ -160,6 +398,14 @@
         <div class="footer-container">
             <div>
                 &copy; 2026 HroSoft. <span data-lang="uk">Всі права захищені.</span><span data-lang="en">All rights reserved.</span>
+            </div>
+            <div class="footer-links">
+                <a href="../privacy/alphabet-for-kids.html" data-lang="uk">Політика конфіденційності</a>
+                <a href="../privacy/alphabet-for-kids.html" data-lang="en">Privacy Policy</a>
+                <a href="../terms/alphabet-for-kids.html" data-lang="uk">Умови використання</a>
+                <a href="../terms/alphabet-for-kids.html" data-lang="en">Terms of Use</a>
+                <a href="../instruction/alphabet-for-kids.html" data-lang="uk">Інструкція</a>
+                <a href="../instruction/alphabet-for-kids.html" data-lang="en">User Guide</a>
             </div>
         </div>
     </footer>

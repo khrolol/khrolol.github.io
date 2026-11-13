@@ -341,6 +341,279 @@ header {
     border-radius: 16px;
 }
 
+/* ==========================================
+   VIDEO CAROUSEL STYLES
+   ========================================== */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2.5rem auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+}
+
+.video-placeholder-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #1a252f;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.video-placeholder-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.video-placeholder-wrapper:hover img {
+    opacity: 0.95;
+}
+
+.play-overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 68px;
+    background: rgba(255, 122, 0, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2rem;
+    box-shadow: 0 4px 15px rgba(255, 122, 0, 0.4);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.video-placeholder-wrapper:hover .play-overlay-button {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: #FF7A00;
+}
+
+.slide-caption {
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 1.5rem 2rem;
+}
+
+.carousel-btn {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: #2c3e50;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.carousel-btn:hover:not(:disabled) {
+    background: #FF7A00;
+    color: #ffffff;
+    border-color: #FF7A00;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: #FF7A00;
+    width: 24px;
+    border-radius: 12px;
+}
+
+
+/* ==========================================
+   3D FLIP CARDS STYLES (BENEFITS)
+   ========================================== */
+.flip-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.8rem;
+    margin: 2.5rem 0;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 220px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background: #ffffff;
+    border: 2px solid #edf2f7;
+    color: #1a252f;
+}
+
+.flip-card-front h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+}
+
+.flip-hint {
+    font-size: 0.8rem;
+    color: #FF7A00;
+    font-weight: 600;
+    display: inline-block;
+    background: #FFF6EE;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+}
+
+.flip-card-back {
+    background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e2e8f0;
+}
+
+
+/* ==========================================
+   4-STEP LEARNING FLOW STYLES
+   ========================================== */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.step-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #FF7A00;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 32px;
+    background: #FF7A00;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(255, 122, 0, 0.4);
+}
+
+.step-card h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+    color: #1a252f;
+}
+
+.step-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
 /* Placeholder App Card */
 .app-card.placeholder {
     border: 2px dashed #ccc;
