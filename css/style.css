@@ -614,6 +614,33 @@ header {
     line-height: 1.4;
 }
 
+/* ==========================================
+   FOUNDER'S STORY BOX STYLES
+   ========================================== */
+.story-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #FF7A00;
+    margin: 3rem 0;
+}
+
+.story-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 1.2rem;
+}
+
+.story-box p:last-child {
+    margin-bottom: 0;
+}
+
+.story-box strong {
+    color: #1a252f;
+}
+
 /* Placeholder App Card */
 .app-card.placeholder {
     border: 2px dashed #ccc;
