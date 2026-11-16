@@ -91,4 +91,19 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     }
 
+    /* ==========================================
+       3. HERO SCREENSHOT TOGGLE
+       ========================================== */
+    const heroImg = document.getElementById('hero-preview-img');
+    if (heroImg) {
+        heroImg.addEventListener('click', () => {
+            const currentSrc = heroImg.getAttribute('src');
+            const altSrc = heroImg.getAttribute('data-alt-src');
+            if (altSrc) {
+                heroImg.setAttribute('src', altSrc);
+                heroImg.setAttribute('data-alt-src', currentSrc);
+            }
+        });
+    }
+
 });
