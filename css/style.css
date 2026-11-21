@@ -785,10 +785,16 @@ footer {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     .nav-container {
         flex-direction: column;
         gap: 0.8rem;
         padding: 0.8rem 1rem;
+        max-width: 100%;
     }
 
     .nav-links {
@@ -799,56 +805,108 @@ footer {
     }
 
     .container {
-        padding: 1.5rem 1rem;
+        padding: 1rem 0.75rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .hero {
-        padding: 2rem 1rem !important;
+        padding: 1.5rem 0.75rem !important;
         text-align: center !important;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        max-width: 100%;
     }
 
     .hero > div[style*="flex"] {
         flex-direction: column !important;
         text-align: center !important;
         align-items: center !important;
+        gap: 1rem !important;
+    }
+
+    .hero > div[style*="flex"] > div {
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .hero h1 {
-        font-size: 1.7rem !important;
+        font-size: 1.5rem !important;
     }
 
     .hero p {
-        font-size: 1rem !important;
+        font-size: 0.95rem !important;
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
 
-    .story-box {
-        padding: 1.5rem;
+    .app-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .doc-content {
-        padding: 1.5rem;
-    }
-
-    .carousel-slide {
-        padding: 1rem;
-    }
-
-    .carousel-controls {
-        padding: 0.8rem 1rem 1.2rem 1rem;
+    .app-card {
+        padding: 1.2rem;
     }
 
     .flip-cards-grid {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 1.2rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .flip-card {
+        height: 150px; /* Make compact so short text doesn't look lost */
+        width: 100%;
+    }
+
+    .flip-card-front, .flip-card-back {
+        padding: 1rem 1.2rem;
+    }
+
+    .flip-card-front h3 {
+        font-size: 1.15rem;
+    }
+
+    .flip-card-back p {
+        font-size: 0.9rem;
     }
 
     .steps-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1.2rem;
+    }
+
+    .step-card {
+        padding: 1.2rem 1rem;
+    }
+
+    .story-box {
+        padding: 1.2rem 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .story-box p {
+        font-size: 0.95rem;
+    }
+
+    .doc-content {
+        padding: 1.2rem;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        border-radius: 14px;
+    }
+
+    .carousel-slide {
+        padding: 0.8rem;
+    }
+
+    .carousel-controls {
+        padding: 0.6rem 0.8rem 1rem 0.8rem;
     }
 
     .footer-container {
@@ -871,14 +929,14 @@ footer {
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 1.5rem !important;
+        font-size: 1.35rem !important;
     }
 
-    .flip-cards-grid {
-        grid-template-columns: 1fr;
+    .flip-card {
+        height: 130px;
     }
 
-    .steps-grid {
-        grid-template-columns: 1fr;
+    .flip-card-front h3 {
+        font-size: 1.05rem;
     }
 }
