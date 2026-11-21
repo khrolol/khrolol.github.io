@@ -559,7 +559,12 @@ header {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
-.flip-card:hover .flip-card-inner,
+@media (hover: hover) {
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
 .flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
