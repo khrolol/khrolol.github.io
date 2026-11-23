@@ -30,17 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (track && slides.length > 0) {
         let currentIndex = 0;
 
-        // Create Dots
-        slides.forEach((_, index) => {
-            const dot = document.createElement('button');
-            dot.classList.add('carousel-dot');
-            if (index === 0) dot.classList.add('active');
-            dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
-            dot.addEventListener('click', () => goToSlide(index));
-            dotsContainer.appendChild(dot);
-        });
+        // Create Dots if dotsContainer exists
+        if (dotsContainer) {
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.classList.add('carousel-dot');
+                if (index === 0) dot.classList.add('active');
+                dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+        }
 
-        const dots = Array.from(dotsContainer.querySelectorAll('.carousel-dot'));
+        const dots = dotsContainer ? Array.from(dotsContainer.querySelectorAll('.carousel-dot')) : [];
 
         function updateCarousel() {
             track.style.transform = `translateX(-${currentIndex * 100}%)`;
@@ -94,16 +96,28 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ==========================================
        3. HERO SCREENSHOT TOGGLE
        ========================================== */
-    const heroImg = document.getElementById('hero-preview-img');
-    if (heroImg) {
-        heroImg.addEventListener('click', () => {
-            const currentSrc = heroImg.getAttribute('src');
-            const altSrc = heroImg.getAttribute('data-alt-src');
-            if (altSrc) {
-                heroImg.setAttribute('src', altSrc);
-                heroImg.setAttribute('data-alt-src', currentSrc);
-            }
-        });
+    function initHeroToggle() {
+        const heroImg = document.getElementById('hero-preview-img');
+        if (heroImg && !heroImg.dataset.toggleInitialized) {
+            heroImg.dataset.toggleInitialized = 'true';
+            heroImg.style.cursor = 'pointer';
+            heroImg.addEventListener('click', (e) => {
+                e.preventDefault();
+                const currentSrc = heroImg.getAttribute('src');
+                const altSrc = heroImg.getAttribute('data-alt-src');
+                if (altSrc) {
+                    heroImg.setAttribute('src', altSrc);
+                    heroImg.setAttribute('data-alt-src', currentSrc);
+                    heroImg.src = altSrc;
+                }
+            });
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initHeroToggle);
+    } else {
+        initHeroToggle();
     }
 
 });
