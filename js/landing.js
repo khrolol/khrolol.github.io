@@ -120,4 +120,65 @@ document.addEventListener('DOMContentLoaded', () => {
         initHeroToggle();
     }
 
+    /* ==========================================
+       4. DYNAMIC APP UPDATES FROM JSON
+       ========================================== */
+    function loadAppUpdates() {
+        const updateElements = document.querySelectorAll('.app-update-info[data-update-app]');
+        if (updateElements.length === 0) return;
+
+        const isNested = window.location.pathname.includes('/apps/');
+        const jsonPath = isNested ? '../updates.json' : 'updates.json';
+
+        const fallbackData = [
+            {
+                "app": "alphabet-for-kids",
+                "date": "2026-11-26",
+                "commentUkr": "Виправлення в модулі генерації уроків та покращення стабільності.",
+                "commentEng": "Bug fixes in the lesson generation module and performance improvements."
+            },
+            {
+                "app": "narbut-alphabet",
+                "date": "2026-11-24",
+                "commentUkr": "Застосунок в процесі публікації (перевірка магазином).",
+                "commentEng": "App is currently under review for publication."
+            }
+        ];
+
+        function renderUpdates(data) {
+            updateElements.forEach(el => {
+                const appName = el.getAttribute('data-update-app');
+                const updateObj = data.find(item => item.app === appName);
+                if (updateObj) {
+                    const lang = document.documentElement.lang || 'uk';
+                    const comment = lang === 'en' ? updateObj.commentEng : updateObj.commentUkr;
+                    const labelDate = lang === 'en' ? 'Last update' : 'Останнє оновлення';
+                    el.innerHTML = `📅 <strong>${labelDate}:</strong> ${updateObj.date} — ${comment}`;
+                }
+            });
+        }
+
+        fetch(jsonPath)
+            .then(res => {
+                if (!res.ok) throw new Error('Network response was not ok');
+                return res.json();
+            })
+            .then(data => renderUpdates(data))
+            .catch(err => {
+                console.warn('Using fallback updates data due to fetch error (likely file:// CORS):', err);
+                renderUpdates(fallbackData);
+            });
+    }
+            })
+            .catch(err => console.error('Failed to load updates.json:', err));
+    }
+
+    loadAppUpdates();
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            setTimeout(loadAppUpdates, 50);
+        });
+    });
+
 });
