@@ -1,0 +1,14 @@
+[
+  {
+    "app": "alphabet-for-kids",
+    "date": "2026-11-26",
+    "commentUkr": "Виправлення в модулі генерації уроків та покращення стабільності.",
+    "commentEng": "Bug fixes in the lesson generation module and performance improvements."
+  },
+  {
+    "app": "narbut-alphabet",
+    "date": "2026-11-24",
+    "commentUkr": "Застосунок в процесі публікації (перевірка магазином).",
+    "commentEng": "App is currently under review for publication."
+  }
+]
