@@ -169,9 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderUpdates(fallbackData);
             });
     }
-            })
-            .catch(err => console.error('Failed to load updates.json:', err));
-    }
 
     loadAppUpdates();
 
